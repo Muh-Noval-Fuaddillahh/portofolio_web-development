@@ -13,7 +13,7 @@
 
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #f2f2f2 0%, #ffffff 100%);
         color: #333;
         overflow-x: hidden;
       }
@@ -45,7 +45,7 @@
       .logo {
         font-size: 1.5rem;
         font-weight: bold;
-        color: white;
+        color: rgb(99, 61, 202);
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
       }
 
@@ -56,7 +56,7 @@
       }
 
       .nav-links a {
-        color: white;
+        color:  rgb(99, 61, 202);
         text-decoration: none;
         font-weight: 500;
         transition: all 0.3s ease;
@@ -175,7 +175,7 @@
       /* Sections */
       section {
         padding: 6rem 0;
-        background: white;
+        background: rgb(60, 62, 170);
         margin: 2rem 0;
         border-radius: 20px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -191,7 +191,7 @@
         text-align: center;
         font-size: 2.5rem;
         margin-bottom: 3rem;
-        color: #333;
+        color: #ffffff;
         position: relative;
       }
 
@@ -200,7 +200,7 @@
         position: absolute;
         width: 80px;
         height: 4px;
-        background: linear-gradient(135deg, #667eea, #764ba2);
+        background: linear-gradient(135deg, #f2f2f2, #764ba2);
         bottom: -10px;
         left: 50%;
         transform: translateX(-50%);
@@ -405,6 +405,35 @@
           gap: 1rem;
         }
       }
+      
+/* Tablet */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 100%;
+    max-width: 350px;
+  }
+}
     </style>
   </head>
   <body>
@@ -539,32 +568,38 @@
       <section id="contact">
         <h2 class="section-title">Hubungi Saya</h2>
         <div class="contact-content">
-          <p>
+          <p style="color: #ffffff;">
             Tertarik untuk berkolaborasi? Mari diskusikan project Anda dan
             wujudkan ide digital terbaik bersama!
           </p>
           <div class="contact-info">
-            <div class="contact-item">
-              <div class="contact-icon">📧</div>
-              <div>
-                <h4>Email</h4>
-                <p>developer@email.com</p>
+            <a href="https://wa.me/6281931447338" target="_blank" style="text-decoration: none; color: inherit;">
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <h4>WhatsApp</h4>
+                  <p>Tlp +62 819-3144-7338</p>
+                </div>
               </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">💼</div>
-              <div>
-                <h4>LinkedIn</h4>
-                <p>/in/webdeveloper</p>
+            </a>
+            <a href="https://www.instagram.com/vall.dev_/" target="_blank" style="text-decoration: none; color: inherit;">
+              <div class="contact-item">
+                <div class="contact-icon">♨️</div>
+                <div>
+                  <h4>Instagram</h4>
+                  <p>/in/Muh Noval Fuaddillah</p>
+                </div>
               </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">🐙</div>
-              <div>
-                <h4>GitHub</h4>
-                <p>/webdeveloper</p>
+            </a>
+            <a href="https://github.com/Muh-Noval-Fuaddillahh" target="_blank" style="text-decoration: none; color: inherit;">
+              <div class="contact-item">
+                <div class="contact-icon">🐙</div>
+                <div>
+                  <h4>GitHub</h4>
+                  <p>/in/Muh-Noval-Fuaddillah</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
